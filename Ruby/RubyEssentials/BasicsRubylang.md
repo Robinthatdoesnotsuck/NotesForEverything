@@ -156,5 +156,62 @@
     ```
 ### Loops
 
++ Loops
+    + they are just loops they are like whiles but even more flexibles
+    ```
+    loop do
+        # Code block
+    end
+    ```
+    + Break to terminate the whole loop
+    + Next 
++ While
+    + just a normal while
+    ```
+    while boolean
+        # code block
+    end
+    ```
++ Until
+    + a reverse while
+    ```
+    until boolean
+        # code block
+    end
+    ```
 ### Iterators
 
++ Iterators in ruby are really powerful and flexible
+
++ times
+    + It is an object method that makes it self iterate
+    ```
+    object.times do
+        # code block
+    end
+    ```
++ upto
++ downto
++ each
+
++ Block variables
+    ```
+    object.downto(value) do |x|
+        puts "#{x}"
+    end
+    ```
+    + The block variables are like how python or rust handles an iterator through a temporal variable in the loop
+
++ Iterators are class sensitive
+    + Int: times, upto, downto, step
+    + Ranges: each, step
+    + Strings: each_line, each_char, each_byte
+    + Array: each, each_index, each_with_index
+    + Hash: each, each_key, each_value, each_pair
+
++ It also has the for in form of python
+    ```
+    for x in xs
+        # code block
+    end
+    ```
