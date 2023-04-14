@@ -200,7 +200,7 @@
         puts "#{x}"
     end
     ```
-    + The block variables are like how python or rust handles an iterator through a temporal variable in the loop
+    i ga
 
 + Iterators are class sensitive
     + Int: times, upto, downto, step
