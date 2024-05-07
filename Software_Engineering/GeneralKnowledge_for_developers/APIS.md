@@ -1,4 +1,5 @@
 # APIs mumbo jumbo
+
 + The common protocol to use is REST
     + Which means Representational State Transfer
     + And a RESTful API must follow three conventions
@@ -22,4 +23,3 @@
 + Versioning the api
     + depending on the technology you are using, it might differ
     + butt )) it is commonly by making just a directory under your api with its version
-
