@@ -1,12 +1,14 @@
-# This are my notes for flask basics 
+# This are my notes for flask basics
+
 + We use
-+ To run the server 
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
++ To run the server
+
+```bash
 flask run
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+```
 
 + [Web service](WebService.md)
-	+ Is an [Api](APIs.md)
-	+ Returns something a json, xml, html
-+ Web application 
-	+ It's a full fledged web page
+  + Is an [Api](APIs.md)
+    + Returns something a json, xml, html
++ Web application
+  + It's a full fledged web page

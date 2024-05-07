@@ -4,9 +4,9 @@
 
 + It is an OOP languaje so everything is a class and an object on execution
 + It is based on Python and Ruby, so it is ident sensitive and well goddamn easy on its implementation
-    + But just as Ruby it is as dynamic as it is type sensitive, what do I mean by that?
-    + That you can have something as a ```var score = 0```
-    + Or we can have it like a ```var score : int = 0```
+  + But just as Ruby it is as dynamic as it is type sensitive, what do I mean by that?
+  + That you can have something as a ```var score = 0```
+  + Or we can have it like a ```var score : int = 0```
 
 ## Data Types
 
@@ -15,9 +15,9 @@
 + Integers
 + Floats/double
 + Arrays
-    + They are fin arrays
+  + They are fin arrays
 + Dictionaries
-    + They are just maps like you know maps, but in esteroids been the key/pair anytypeable
+  + They are just maps like you know maps, but in esteroids been the key/pair anytypeable
 
 ### Variables
 
@@ -33,11 +33,11 @@
 
 + They are the same syntax as python
 + BUTT ) )
-    + You can do the reduced form of most operations (unlike python)
+  + You can do the reduced form of most operations (unlike python)
 
 ### Logic Operators
 
-+ They are practically the same as python 
++ They are practically the same as python
 
 ### Flow control operations
 
@@ -48,7 +48,7 @@
 #### MATCH
 
 + They are a pattern matching tool just like Erlang or Rust
-+ So it just matches the expression that it might be and like Erlang and Rust you need to especify the any type or the exception to your expected values so you have to keep an eye on that brother and like Erlang the any match it's specified as ```_ ```
++ So it just matches the expression that it might be and like Erlang and Rust you need to especify the any type or the exception to your expected values so you have to keep an eye on that brother and like Erlang the any match it's specified as ```_```
 
 ### LOOPS
 
