@@ -3,15 +3,19 @@
 ## Basic Data Structures
 
 ### Collections
+
 + They don't have any kind of order
 + They have multiple types of objects in them
 + Data structures are the ones that decide any of this
-	
+
 ### Lists
+
 + They are ordered
 + The objects in it are related
 + There is no fixed lenght
-    #### Arrays are the most basic type of lists available in programming languages
+
+#### Arrays are the most basic type of lists available in programming languages
+
     + The power of arrays depends on the language you're using them
     + They have a fixed size but this depends on the language
     + Arrays  have indexes to tell the position of the elements inside them
@@ -45,33 +49,38 @@
 ## Searching and Sorting algorithms
 
 ### Binary Search
-  + It checks the middle value of a sorted array
-  + it checks if it is higher or smaller than this number so that it can skip a section of the array that wouln't have our number, so it does this until it finds it or it doesn't exists
-  + Efficiency
-    + O(log(n))
-      
+
++ It checks the middle value of a sorted array
++ it checks if it is higher or smaller than this number so that it can skip a section of the array that wouln't have our number, so it does this until it finds it or it doesn't exists
++ Efficiency
+  + O(log(n))
+
 ### Sorting algorithms
-  + Bubble Sort, Naive approach 
-  + The algorithms bubbles up the biggest element to the top but this is iterative
-    + We compare everything with everyone
-    + The complexity is (n-1)^2
-      + But it is also O(n-1)^2 or O(n^2)
-    
-    
+
++ Bubble Sort, Naive approach
++ The algorithms bubbles up the biggest element to the top but this is iterative
+  + We compare everything with everyone
+  + The complexity is (n-1)^2
+    + But it is also O(n-1)^2 or O(n^2)
+
 ### Merge Sort
-  + You break up an array to sort it and then you build it up again
-    + This is called divide and conquer
-    + We divide the array in pairs or in single elements and compared them to sort this array
-    + Then we combine the arrays in pairs and compare the arrays that are sorted
-      + We put them in a new array and sort this arrays
-    + Complexity is O(nlog(n))
+
++ You break up an array to sort it and then you build it up again
+  + This is called divide and conquer
+  + We divide the array in pairs or in single elements and compared them to sort this array
+  + Then we combine the arrays in pairs and compare the arrays that are sorted
+    + We put them in a new array and sort this arrays
+  + Complexity is O(nlog(n))
 
 ### Quick Sort
-  + You use a pivot at the lower sections of the array to swap 
-    + The pivot is a value from the array and usually you choose the last item
-    + You need to make an in place sort so we need to move the n-1 in lenght of the element to move the number and swap it with the bigger one
+
++ You use a pivot at the lower sections of the array to swap
+  + The pivot is a value from the array and usually you choose the last item
+  + You need to make an in place sort so we need to move the n-1 in lenght of the element to move the number and swap it with the bigger one
 
 ## Maps or something
+
 The maps are indexed by a key it can be well practicaly anything
-+ A key only exists once that means that is there only once	
+
++ A key only exists once that means that is there only once
 + For python maps are dictionaries

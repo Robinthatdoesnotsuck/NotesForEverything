@@ -135,3 +135,39 @@ class TestMyClass2:
   - This just gives us a more lax comparison between floating numbers
   - It has specific arguments for the decimal tolerance placement
   - ``assert 2.2 == pytest.approx(2.3, 0.1)``
+
+## Handling Exceptions in test
+
+- First we have to look into [**Context Managers**](../General_Python_Concepts/Medium_Specific_stuff.md)
+- Then into [**Exceptions with Python**](../General_Python_Concepts/Medium_Specific_stuff.md)
+- So now for the specifics on how pytest makes use of errors well to test stuff
+  - It is more on making sure the error we expect on the specific erroneous case is raised
+  - It goes something like this
+  
+  - ```Python
+      # here we have the imports from a script that divides stuff
+      def test_divide_nombers():
+        with pytest.raises(ZeroDivisionError):
+          divide_numbers(10, 0)
+
+  - Here we are just making sure that the error is raised properly as it was specified in the other script
+  
+  - ```Python
+      def divide_numbers(x, y):
+        if y == 0:
+            raise ZeroDivisionError("Cannot divide by zero")
+        return x / y
+  
+  - One thing to note is that when using the context manager ``pytest.raises()``
+  - We have to remember that the exception being raised must be the final line within the scope of the context manager
+
+## Fixtures in pytest
+
+It is another tool at our disposal, it is really useful cause it lets us create functions that returns objects for our test, this is useful when we are handling preconditions for tests in objects, data used, for test data, connections to other entities or just clean up after a test is done
+
+- In fixtures we mostly ``return`` or ``yield`` the object in question
+- If we have teardown code in the fixture it is recommended to use ``yield``
+
+### Using Fixtures
+
+- To use Fixtures in pytest we first have to define a ``conftest.py``
