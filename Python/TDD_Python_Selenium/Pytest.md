@@ -171,3 +171,84 @@ It is another tool at our disposal, it is really useful cause it lets us create 
 ### Using Fixtures
 
 - To use Fixtures in pytest we first have to define a ``conftest.py``
+- These fixtures are handled automatically by ptests discovery and organization tools
+- The ``conftest.py`` file has to be placed in the root test directory 
+- A fixture has to be defined with the ``@pytest.fixture`` decorator
+- Like:
+  
+  - ```Python
+        @pytest.fixture
+        def data():
+          return {'key': 'value'}
+        
+        @pytest.fixture
+        def lst():
+          return [1, 2, 3, 4]
+
+- Fixtures can have dependencies between them
+
+  - ```Python
+        @pytest.fixture
+        def data():
+          return {'key': 'value'}
+        
+        @pytest.fixture
+        def another_data(data):
+          another_data = data.copy()
+          another_data['another_key'] = 'another_value'
+          return another_data
+
+- Fixtures have scope, scope in the meaning of its life cycle
+  - Scopes takes four parameters
+    - Function
+      - Default scope of a fixture, this means that it is called once for each test that uses it, the fixtures is destroyed after each test is finished
+    - Class
+      - The fixture is called once for each test class that uses it, it is destroyed once every test method is completed
+    - Module
+      - The fixture is called once per module it is destroyed when all tests in the module are done
+    - Session
+      - This means that the fixture its only use once per testing session, but makes this fixture available for all classes and modules, the fixture is destroyed when everything is done
+  
+  - ```Python
+      @pytest.fixture(scope = "session")
+      def my_session_fixture():
+        print("creating session fixture")
+        yield
+        print("Destroying session fixture")
+
+      @pytest.fixture(scope = "module")
+      def my_module_fixture():
+        print("Creating module fixture")
+        yield
+        print("Destroying module fixture")
+
+      @pytest.fixture(scope = "function")
+      def my_function_fixture():
+        print("Creating function fixture")
+        yield
+        print("Destroying function fixture")
+
+- We also have an option to mark the fixtures to be autoused
+  - This means the fixtures sets itself up even if they are not listed in the parameters
+  - This is useful when we have a database connection fixture
+
+  - ```Python
+      def test_autouse_fixture(my_autouse_fixture):
+        assert my_autouse_fixture == [1, 2, 3]
+
+- There are maney built in fixtures in pytest
+  - Since these are built-in we can use them without specifying the conftest.py file
+  - Like:
+    - tmpdir
+      - Helps creating temp directory for testing
+    - monkeypatch
+      - It replaces an object or function with a new implementation
+    - request
+      - Gives us information about the current test request, such as the name of the test, module, function, etc.
+
+## Pytest command sheet
+
+- For running a test
+  - ``pytest test.py``
+- For avoid capturing stdout and stderr, this means we can use print in our tests
+  - ``pytest test.py -caputre=no``
