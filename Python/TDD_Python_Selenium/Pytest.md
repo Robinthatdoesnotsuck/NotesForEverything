@@ -172,7 +172,7 @@ It is another tool at our disposal, it is really useful cause it lets us create 
 
 - To use Fixtures in pytest we first have to define a ``conftest.py``
 - These fixtures are handled automatically by ptests discovery and organization tools
-- The ``conftest.py`` file has to be placed in the root test directory 
+- The ``conftest.py`` file has to be placed in the root test directory
 - A fixture has to be defined with the ``@pytest.fixture`` decorator
 - Like:
   
@@ -246,9 +246,80 @@ It is another tool at our disposal, it is really useful cause it lets us create 
     - request
       - Gives us information about the current test request, such as the name of the test, module, function, etc.
 
+## Markers
+
+Markers are decorators that modify the behavior of the tests or some actions aplying to them, this helps us in categorizing, skipping or parametrize the tests.
+
+- Expected failure
+  - It is a mark that expects the failure of a test
+- Conditionally skipping tests
+  - The marker tests a condition to execute a test, this is often used when our tests depend on external libraries or modules
+- Or Skipping it without conditions
+- For making Parametrized tests
+  - We can specificed different arguments and values for a test
+  - This will cause it to iterate over every permutation of arguments
+- Like
+  
+  - ```Python
+      @pytest.mark.xfail
+      def test_fail_example():
+          assert 1 + 1 == 3
+
+
+      @pytest.mark.skipif(
+          sys.version_info.major == 3 and sys.version_info.minor < 10,
+          reason="Requires python 3.10",
+      )
+      def test_skipif():
+          assert True
+
+
+      @pytest.mark.skip(reason="Fokiu")
+      def test_skip():
+          assert 1 + 1 == 2
+
+
+      @pytest.mark.parametrize(
+          "test_input,expected_output", [("3+5", 8), ("2+4", 6), ("6*9", 54)]
+      )
+      def test_parametrized(test_input, expected_output):
+          assert eval(test_input) == expected_output
+
+- We can also use fixtures with marks
+  - This makes it unnecesarry to call the fixture as a parameter on the test function
+  - The drawback is that we can't access directly the fixture object
+  
+  - ```Python
+      @pytest.mark.usefixtures("mark_fixture")
+      def test_mark_fixture():
+          assert True
+
+- We can also combine the markers to create customizable tests
+- It is useful when we have a lot of test that have to be filtered
+
+  - ```Python
+      @pytest.mark.skipif(sys.platform == "win32", reason="Test not supported on Windows")
+      @pytest.mark.parametrize(
+          "test_input,expected_output", [("3+5", 8), ("2+4", 6), ("6*9", 54)]
+      )
+      def test_multi_mark(test_input, expected_output):
+          assert eval(test_input) == expected_output
+
+- Pytest also has the capability of filtering test depending on the mark used on it
+- It also let us create our custom markers
+  - Like
+  
+  - ```Python
+      @pytest.mark.name
+      def test_example():
+        pass
+
 ## Pytest command sheet
 
 - For running a test
   - ``pytest test.py``
 - For avoid capturing stdout and stderr, this means we can use print in our tests
   - ``pytest test.py -caputre=no``
+- For running pytest by filtering marks
+  - ``pytest -m skip``
+  - This will filter tests that have the ``@pytest.mark.skip``
