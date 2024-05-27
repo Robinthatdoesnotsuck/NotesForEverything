@@ -314,6 +314,14 @@ Markers are decorators that modify the behavior of the tests or some actions apl
       def test_example():
         pass
 
+## Parametrizing tests
+
+Pytest can load data from external sources
+
+- To do this we just have to read de csv in somesort of way
+  - Maybe with pandas or the csv module
+- Then just parametrize the arguments of the inputs and the reader function
+
 ## Pytest command sheet
 
 - For running a test
