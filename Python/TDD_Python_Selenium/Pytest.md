@@ -327,7 +327,7 @@ Pytest can load data from external sources
 - For running a test
   - ``pytest test.py``
 - For avoid capturing stdout and stderr, this means we can use print in our tests
-  - ``pytest test.py -caputre=no``
+  - ``pytest test.py -capture=no``
 - For running pytest by filtering marks
   - ``pytest -m skip``
   - This will filter tests that have the ``@pytest.mark.skip``
