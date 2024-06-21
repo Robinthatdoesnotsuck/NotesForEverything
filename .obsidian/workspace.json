@@ -1,0 +1,164 @@
+{
+  "main": {
+    "id": "9a70d5375b8b917a",
+    "type": "split",
+    "children": [
+      {
+        "id": "315c6b44ceef9c86",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "c0c2591f23592f37",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Python/TDD_Python_Selenium/Pytest.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "de347e20ad8f15c7",
+    "type": "split",
+    "children": [
+      {
+        "id": "c8e2452dd8e0110d",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "33f0d38120360a6c",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "01dfb4db3308cca9",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "637181d7ba07c1da",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "b26cafd476fa29f0",
+    "type": "split",
+    "children": [
+      {
+        "id": "d5dc6b1b7f957b3e",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "8b9cb8b0d29dde4f",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Python/TDD_Python_Selenium/Pytest.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "635b87e6aecda9cb",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "Python/TDD_Python_Selenium/Pytest.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "200568beda6f8fb6",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "80a7128d7dd5443d",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "Python/TDD_Python_Selenium/Pytest.md"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false
+    }
+  },
+  "active": "c0c2591f23592f37",
+  "lastOpenFiles": [
+    "GoLan/GoForGophers/GoBasics.md",
+    "GoLan/GoForGophers/AdvancingWithGo.md",
+    "CloudComputing/AWS/BasicsOf.md",
+    "Ruby/Index.md",
+    "Ruby",
+    "README.md",
+    "Python/TDD_Python_Selenium/Pytest.md",
+    "Untitled.canvas",
+    "GoLan/GoForGophers/Index.md",
+    "GoLan/GoForGophers/WeGoIntermediate.md",
+    "Infrastructure_and_System_Administration/Index.md",
+    "Sempi_manifesto.md"
+  ]
+}

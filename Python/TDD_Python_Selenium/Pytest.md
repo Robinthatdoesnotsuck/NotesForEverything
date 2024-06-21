@@ -5,7 +5,7 @@
 - It´s a testing framework for Unit Testing mostly, and in conjunction with other tech it can be used for [UI Testing](./Selenium_UI_testing.md)
 - Pytest is a mature testing framework that lets us make unit test, integration test and all sort of tests
 - This is achieved by the simple syntax it has making it easy to write test with fixtures, assertion, mocking, etc.
-- It has easy integration capibilites, so you can stick it with other frameworks like django, flask, selenium, pygame, etc.
+- It has easy integration capabilities, so you can stick it with other frameworks like django, flask, selenium, pygame, etc.
 - The integration capabilites give it a miriad of extensibility with plugins, hooks and additions with other testing frameworks
 
 ### How does it works?
@@ -121,13 +121,13 @@ class TestMyClass2:
 - The are also the **Boolean assertions**
   - This are for testing the existence of a value or the existence of anything in the context of the test or if a value is set in a variable
 
-  - ```python
+```python
     a = 10
     assert a
 
     b = "abc"
     assert b
-
+```
   - Also used for normal boolean comparison between boolean data types
     - `` a = True `` ``assert a is True``
 
@@ -144,19 +144,21 @@ class TestMyClass2:
   - It is more on making sure the error we expect on the specific erroneous case is raised
   - It goes something like this
   
-  - ```Python
+```Python
       # here we have the imports from a script that divides stuff
       def test_divide_nombers():
         with pytest.raises(ZeroDivisionError):
           divide_numbers(10, 0)
+```
 
   - Here we are just making sure that the error is raised properly as it was specified in the other script
   
-  - ```Python
+```Python
       def divide_numbers(x, y):
         if y == 0:
             raise ZeroDivisionError("Cannot divide by zero")
         return x / y
+```
   
   - One thing to note is that when using the context manager ``pytest.raises()``
   - We have to remember that the exception being raised must be the final line within the scope of the context manager
@@ -176,7 +178,7 @@ It is another tool at our disposal, it is really useful cause it lets us create 
 - A fixture has to be defined with the ``@pytest.fixture`` decorator
 - Like:
   
-  - ```Python
+```Python
         @pytest.fixture
         def data():
           return {'key': 'value'}
@@ -184,10 +186,9 @@ It is another tool at our disposal, it is really useful cause it lets us create 
         @pytest.fixture
         def lst():
           return [1, 2, 3, 4]
-
+```
 - Fixtures can have dependencies between them
-
-  - ```Python
+```Python
         @pytest.fixture
         def data():
           return {'key': 'value'}
@@ -197,7 +198,7 @@ It is another tool at our disposal, it is really useful cause it lets us create 
           another_data = data.copy()
           another_data['another_key'] = 'another_value'
           return another_data
-
+```
 - Fixtures have scope, scope in the meaning of its life cycle
   - Scopes takes four parameters
     - Function
@@ -209,7 +210,7 @@ It is another tool at our disposal, it is really useful cause it lets us create 
     - Session
       - This means that the fixture its only use once per testing session, but makes this fixture available for all classes and modules, the fixture is destroyed when everything is done
   
-  - ```Python
+```Python
       @pytest.fixture(scope = "session")
       def my_session_fixture():
         print("creating session fixture")
@@ -227,16 +228,21 @@ It is another tool at our disposal, it is really useful cause it lets us create 
         print("Creating function fixture")
         yield
         print("Destroying function fixture")
+```
 
-- We also have an option to mark the fixtures to be autoused
+- We also have an option to mark the fixtures to be auto-used
   - This means the fixtures sets itself up even if they are not listed in the parameters
   - This is useful when we have a database connection fixture
+```Python
+	@pytest.fixture(scope="session", autouse=True)
+	def my_autouse_fixture():
+		return [1, 2, 3]
+	
+    def test_autouse_fixture(my_autouse_fixture):
+	    assert my_autouse_fixture == [1, 2, 3]
+```
 
-  - ```Python
-      def test_autouse_fixture(my_autouse_fixture):
-        assert my_autouse_fixture == [1, 2, 3]
-
-- There are maney built in fixtures in pytest
+- There are mane built in fixtures in pytest
   - Since these are built-in we can use them without specifying the conftest.py file
   - Like:
     - tmpdir
@@ -248,19 +254,19 @@ It is another tool at our disposal, it is really useful cause it lets us create 
 
 ## Markers
 
-Markers are decorators that modify the behavior of the tests or some actions aplying to them, this helps us in categorizing, skipping or parametrize the tests.
+Markers are decorators that modify the behavior of the tests or some actions applying to them, this helps us in categorizing, skipping or parameterize the tests.
 
 - Expected failure
   - It is a mark that expects the failure of a test
 - Conditionally skipping tests
   - The marker tests a condition to execute a test, this is often used when our tests depend on external libraries or modules
 - Or Skipping it without conditions
-- For making Parametrized tests
-  - We can specificed different arguments and values for a test
+- For making Parameterized tests
+  - We can specified different arguments and values for a test
   - This will cause it to iterate over every permutation of arguments
 - Like
   
-  - ```Python
+```Python
       @pytest.mark.xfail
       def test_fail_example():
           assert 1 + 1 == 3
@@ -284,6 +290,7 @@ Markers are decorators that modify the behavior of the tests or some actions apl
       )
       def test_parametrized(test_input, expected_output):
           assert eval(test_input) == expected_output
+```
 
 - We can also use fixtures with marks
   - This makes it unnecesarry to call the fixture as a parameter on the test function

@@ -2,7 +2,7 @@
 
 jk
 
-## Just a collection of the notes I've been doing for the lenght of my career
+## Just a collection of the notes I've been doing for the length of my career
 
 + 3 years and going
 
@@ -18,4 +18,4 @@ jk
 4. [Security](./Security/Index.md)
 5. [Software Engineering](./Software_Engineering/Index.md)
 6. [Golang](./GoLan/Index.md)
-7. [Infrastructue](./Infrastructure_and_System_Administration/Index.md)
+7. [Infrastructure](./Infrastructure_and_System_Administration/Index.md)

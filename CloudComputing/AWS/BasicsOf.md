@@ -2,7 +2,7 @@
 
 ## Fundamentals of AWS
 
-+ Almost all moder computing centers around the basic client-server model.
++ Almost all modern computing centers around the basic client-server model.
   + The client makes a request that the server receives and responds to it
     + The client is a web browser or an app that a person is using
   + In amazon usually the servers is:

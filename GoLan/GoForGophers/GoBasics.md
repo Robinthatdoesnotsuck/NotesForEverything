@@ -11,7 +11,7 @@ We go by parts a simple variable would look like this:
 - ``string`` the type of our variable
 - ``="bar"`` the initial value of it
 
-We can also declare multivariables with a simple ``var`` statement
+We can also declare multi-variables with a simple ``var`` statement
 
 ```Go
     var (
@@ -24,7 +24,7 @@ We can also declare multivariables with a simple ``var`` statement
 Using this type of notation or full var notation it's not kinda normal, it is used sometimes when you have constant values that have to be controlled.
 
 - So the simplified helps in the last example since a lot of the values make the type inference easier for the compiler.
-- This will print the same stuff as above, cause if something doesn't have an initial value asigned, Go will automatically asigned what would be the 0 value for that data type, in this case for bool the initial vlaue its 0 or false
+- This will print the same stuff as above, cause if something doesn't have an initial value assigned, Go will automatically assigned what would be the 0 value for that data type, in this case for bool the initial value its 0 or false
 
 ```Go
     var (
