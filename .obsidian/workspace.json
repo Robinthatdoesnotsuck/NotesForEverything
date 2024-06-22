@@ -11,12 +11,8 @@
             "id": "c0c2591f23592f37",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Python/TDD_Python_Selenium/Pytest.md",
-                "mode": "source",
-                "source": false
-              }
+              "type": "graph",
+              "state": {}
             }
           }
         ]
@@ -85,7 +81,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Python/TDD_Python_Selenium/Pytest.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +97,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Python/TDD_Python_Selenium/Pytest.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -124,9 +118,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "Python/TDD_Python_Selenium/Pytest.md"
-              }
+              "state": {}
             }
           }
         ]
@@ -146,19 +138,25 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "c0c2591f23592f37",
+  "active": "33f0d38120360a6c",
   "lastOpenFiles": [
+    "Infrastructure_and_System_Administration/InfraSisAdminIndex.md",
+    "Infrastructure_and_System_Administration/VagrantForMe/VagrantIndex.md",
+    "README.md",
+    "Software_Engineering/SWEIndex.md",
+    "Sempi_manifesto.md",
+    "Infrastructure_and_System_Administration/AnsibleWorkRelated/AnsibleIndex.md",
+    "Godot/GDIndex.md",
     "GoLan/GoForGophers/GoBasics.md",
+    "Python/TDD_Python_Selenium/Pytest.md",
+    "Python/Utilities/Poetry.md",
+    "Python/Pyndex.md",
     "GoLan/GoForGophers/AdvancingWithGo.md",
     "CloudComputing/AWS/BasicsOf.md",
     "Ruby/Index.md",
     "Ruby",
-    "README.md",
-    "Python/TDD_Python_Selenium/Pytest.md",
     "Untitled.canvas",
-    "GoLan/GoForGophers/Index.md",
-    "GoLan/GoForGophers/WeGoIntermediate.md",
-    "Infrastructure_and_System_Administration/Index.md",
-    "Sempi_manifesto.md"
+    "GoLan/GoForGophers/CoreGoIndex.md",
+    "GoLan/GoForGophers/WeGoIntermediate.md"
   ]
 }

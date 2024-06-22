@@ -296,32 +296,38 @@ Markers are decorators that modify the behavior of the tests or some actions app
   - This makes it unnecesarry to call the fixture as a parameter on the test function
   - The drawback is that we can't access directly the fixture object
   
-  - ```Python
+```Python
       @pytest.mark.usefixtures("mark_fixture")
       def test_mark_fixture():
           assert True
+```
 
 - We can also combine the markers to create customizable tests
 - It is useful when we have a lot of test that have to be filtered
 
-  - ```Python
+ ```Python
       @pytest.mark.skipif(sys.platform == "win32", reason="Test not supported on Windows")
       @pytest.mark.parametrize(
           "test_input,expected_output", [("3+5", 8), ("2+4", 6), ("6*9", 54)]
       )
       def test_multi_mark(test_input, expected_output):
           assert eval(test_input) == expected_output
+```
 
 - Pytest also has the capability of filtering test depending on the mark used on it
 - It also let us create our custom markers
   - Like
   
-  - ```Python
+```Python
       @pytest.mark.name
       def test_example():
         pass
-
+```
 ## Parametrizing tests
+
+If we want to test a function with multiple input values we can use the parametrize functionality of the pytest marker
+- This lets us make multiple test cases in one single function
+
 
 Pytest can load data from external sources
 

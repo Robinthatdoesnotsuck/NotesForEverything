@@ -12,10 +12,10 @@ jk
 
 ## The list of current stuff that has notes
 
-1. [Godot](./Godot/Index.md)
-2. [Python](./Python/Index.md)
+1. [Godot](GDIndex.md)
+2. [Python](Pyndex.md)
 3. [Ruby](./Ruby/Index.md)
 4. [Security](./Security/Index.md)
-5. [Software Engineering](./Software_Engineering/Index.md)
-6. [Golang](./GoLan/Index.md)
-7. [Infrastructure](./Infrastructure_and_System_Administration/Index.md)
+5. [Software Engineering](SWEIndex.md)
+6. [Golang](GoIndex.md)
+7. [Infrastructure](InfraSisAdminIndex.md)
