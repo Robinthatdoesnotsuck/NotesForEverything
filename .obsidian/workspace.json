@@ -11,8 +11,12 @@
             "id": "c0c2591f23592f37",
             "type": "leaf",
             "state": {
-              "type": "graph",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "UnityGameDevGeneral/ShadersWithUnity/BasicsInShaders.md",
+                "mode": "source",
+                "source": false
+              }
             }
           }
         ]
@@ -81,6 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "UnityGameDevGeneral/ShadersWithUnity/BasicsInShaders.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -97,6 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "UnityGameDevGeneral/ShadersWithUnity/BasicsInShaders.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -118,7 +124,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "UnityGameDevGeneral/ShadersWithUnity/BasicsInShaders.md"
+              }
             }
           }
         ]
@@ -138,11 +146,19 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "33f0d38120360a6c",
+  "active": "c0c2591f23592f37",
   "lastOpenFiles": [
+    "Pasted image 20240623221014.png",
+    "Pasted image 20240623221010.png",
+    "README.md",
+    "UnityGameDevGeneral/ShadersWithUnity/BasicsInShaders.md",
+    "UnityGameDevGeneral/ShadersWithUnity/ShaderIndex.md",
+    "UnityGameDevGeneral/VRDev/SteamVRDevelopment.md",
+    "UnityGameDevGeneral/VRDev/VRIndex.md",
+    "UnityGameDevGeneral/Unitindex.md",
+    "UnityGameDevGeneral/ShadersWithUnity",
     "Infrastructure_and_System_Administration/InfraSisAdminIndex.md",
     "Infrastructure_and_System_Administration/VagrantForMe/VagrantIndex.md",
-    "README.md",
     "Software_Engineering/SWEIndex.md",
     "Sempi_manifesto.md",
     "Infrastructure_and_System_Administration/AnsibleWorkRelated/AnsibleIndex.md",
