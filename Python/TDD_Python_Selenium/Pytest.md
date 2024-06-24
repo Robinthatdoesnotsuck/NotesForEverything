@@ -327,14 +327,62 @@ Markers are decorators that modify the behavior of the tests or some actions app
 
 If we want to test a function with multiple input values we can use the parametrize functionality of the pytest marker
 - This lets us make multiple test cases in one single function
+```Python
+@pytest.mark.parametrize("x, y, result", [
+(2, 3, 6),
+(1, 1, 1),
+(0, 5, 0),
+(-2, 3, -6),
+])
+def test_multiply(x: int, y: int , result: int) -> None:
+	assert multiply(x, y) == result
+```
 
+With pytest we can also parametrize test like a matrix so that it can load and X * Y case basis
+- Just have to add to markers with parametrize
+```Python
+@pytest.mark.parametrize("x", [0, 1])
+@pytest.mark.parametrize("y", [2, 3])
+def test_parameter_matrix(x: int, y: int) -> None:
+	print("x:", x, "y:", y)
+	assert x + y > 0
+```
 
-Pytest can load data from external sources
-
+Pytest can load data from external sources and to parametrize them
 - To do this we just have to read de csv in somesort of way
   - Maybe with pandas or the csv module
 - Then just parametrize the arguments of the inputs and the reader function
 
+```Python
+def read_csv(file_path):
+	data = []
+	with open(file_path) as f:
+		reader = csv.reader(f)
+		next(reader)
+		for row in reader:
+			print(row)
+		data.append(tuple(row))
+	return data
+
+@pytest.mark.parametrize('input1, input2, expected', read_csv('tests/test_data.csv'))
+def test_file_addition(input1, input2, expected) -> None:
+	assert int(input1) + int(input2) == int(expected)
+```
+
+We can also parametrize the class testing depending on the member data that we declared in the original class.
+- This parameters in the marker will affect the whole class when testing
+```Python
+@pytest.mark.parametrize("x, y", [(1, 2), (3, 4)])
+class TestMyClass:
+	def test_add(self, x, y):
+		my_class = MyClass(x, y)
+		assert my_class.add() == x + y
+	
+	def test_sub(self, x, y):
+		my_class = MyClass(x, y)
+		assert my_class.add() == y - x
+```
+## Configuration and Command line stuff for pytest
 ## Pytest command sheet
 
 - For running a test

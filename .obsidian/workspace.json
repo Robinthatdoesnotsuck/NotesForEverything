@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "UnityGameDevGeneral/ShadersWithUnity/BasicsInShaders.md",
+                "file": "Python/TDD_Python_Selenium/Pytest.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "UnityGameDevGeneral/ShadersWithUnity/BasicsInShaders.md",
+                "file": "Python/TDD_Python_Selenium/Pytest.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "UnityGameDevGeneral/ShadersWithUnity/BasicsInShaders.md",
+                "file": "Python/TDD_Python_Selenium/Pytest.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "UnityGameDevGeneral/ShadersWithUnity/BasicsInShaders.md"
+                "file": "Python/TDD_Python_Selenium/Pytest.md"
               }
             }
           }
@@ -148,10 +148,11 @@
   },
   "active": "c0c2591f23592f37",
   "lastOpenFiles": [
-    "Pasted image 20240623221014.png",
+    "UnityGameDevGeneral/ExternalResources/Pasted image 20240623221014.png",
+    "UnityGameDevGeneral/ShadersWithUnity/BasicsInShaders.md",
+    "UnityGameDevGeneral/ExternalResources",
     "Pasted image 20240623221010.png",
     "README.md",
-    "UnityGameDevGeneral/ShadersWithUnity/BasicsInShaders.md",
     "UnityGameDevGeneral/ShadersWithUnity/ShaderIndex.md",
     "UnityGameDevGeneral/VRDev/SteamVRDevelopment.md",
     "UnityGameDevGeneral/VRDev/VRIndex.md",
