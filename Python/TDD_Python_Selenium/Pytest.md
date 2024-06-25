@@ -382,13 +382,51 @@ class TestMyClass:
 		my_class = MyClass(x, y)
 		assert my_class.add() == y - x
 ```
-## Configuration and Command line stuff for pytest
+## Configuration and for pytest
+
+In pytest there are two configuration files that can be created to modify the behavior of pytest
+- The pytest.ini file
+	- It's an INI file that is placed in a test root directory or any directory that contains tests
+- The conftest.py
+	- This can be placed in any directory and it is only used when
+
+### Using pytest.ini
+
+For the pytest.ini lets use different config options automatically that applies to the pytest command when in use
+- ``addopts`` lets us add default cli options when using the pytest command
+- ``minversion`` specifies the minimum pytest version needed
+- We use ``python_classes, python_files, python_functions`` to modify the pattern used in pytest to find test and scripts in general
+- You can register custom markers with ``markers``
+- We can filter warnings with ``filterwarnings``
+- ``userfixtures`` lets us well this
+- For configuring logging options we have
+	- ``log_level`` lets us modify how logs are saved from pytest options, debug, info, etc.
+	- ``log_file_format`` How the string format will be saved
+	- ``log_file_date_format`` The date format needed
+
+```Python
+[pytest]
+addopts = -ra -q
+minversion = 7.5
+python_classes = Random*
+python_files = test_*.py random_*.py
+python_functions = *_random
+markers =
+	slow: marks tests as slow
+filterwarnings = 
+	error
+	ignoer::DeprecationWarning
+```
 ## Pytest command sheet
+
+Pytest commands go like this
+``pytest [options] [file or directory]``
 
 - For running a test
   - ``pytest test.py``
 - For avoid capturing stdout and stderr, this means we can use print in our tests
   - ``pytest test.py -capture=no``
+  - ``pytest -s`` do the same thing
 - For running pytest by filtering marks
   - ``pytest -m skip``
   - This will filter tests that have the ``@pytest.mark.skip``
