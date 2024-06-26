@@ -2,7 +2,7 @@
 
 ## References
 
-+ It is just that, a reference to a variable that aleady exists. To declare a variable reference you must use the type sufix of **&**
++ It is just that, a reference to a variable that already exists. To declare a variable reference you must use the type suffix of **&**
   + Example
 
   + ```C++
@@ -10,31 +10,32 @@
         int& r = i;
 
   + This r variable will give you the direction in memory of the i variable in an standard way(in hexadecimal)
-
 + Pass-by-value
   + This is general programming knowledge, this is not exclusive of C++
   + So when you call a function the parameters inside of it will be copies of the input ones, meaning if you modify anything on the input
     parameters, it will not show the changes of it
     + This is the code like you would imagine would swap to variables but it doesn't do that cause of what we explained previously
 
-      + ```C++
-            void Swap(int a, int b) {
-                int temp = a;
-                a = b;
-                b = temp;
-            }
+```C++
+    void Swap(int a, int b) {
+        int temp = a;
+        a = b;
+        b = temp;
+    }
+```
 
-    + To change this we will pass it by reference, instead of just by value
++ To change this we will pass it by reference, instead of just by value
 
-      + ```C++
-            void Swap(int& a, int& b) {
-                int temp = a;
-                a = b;
-                b = temp;
-            }
+```C++
+    void Swap(int& a, int& b) {
+        int temp = a;
+        a = b;
+        b = temp;
+    }
+```
 
-  + But ] ], Why does this happens? cause as a default when you use a function in C++(and many more C-like languages) it will pass by value making a temporary copy of the variables that you use as parameters and the compiler will destroy this temp variables once it is done with executing the function
-  + This leaves you with some work arounds
++ But ] ], Why does this happens? cause as a default when you use a function in C++(and many more C-like languages) it will pass by value making a temporary copy of the variables that you use as parameters and the compiler will destroy this temp variables once it is done with executing the function
+  + This leaves you with some work around
     + Since you are now passing by reference you need to use existing variables with a direction on memory, this means that your function now only works with variables instead of variables and values
 
 + If you are using a C-like language read the reference on how it defaults on the pass-by-x when you use functions cause depending on the language it will be pass-by-reference or by-value
@@ -53,7 +54,7 @@
         int* p = &y;
         ```
     + We just store the direction on memory of that variable and well, how would anyone modify the value of a pointer variable?
-          we will ned to use the power of dereferencing the pointer to do this we would just use ```*p = 42;``` this is done to modify the value of the thing we are pointing to directly instead of been a silly billy to try and change an hexadecimal value on memory
+          we will need to use the power of de-referencing the pointer to do this we would just use ```*p = 42;``` this is done to modify the value of the thing we are pointing to directly instead of been a silly billy to try and change an hexadecimal value on memory
   + Also unlike references pointers can point to well whatever the hell we want since these things are just memory directions
 
 ## Arrays
@@ -164,7 +165,7 @@
     }
     ```
 
-  + Here the + operator is overriden with what we programmed, this new + will create a new Complex object that is the summ of the real and imaginary parts of two other objects
+  + Here the + operator is overridden with what we programmed, this new + will create a new Complex object that is the sums of the real and imaginary parts of two other objects
   + You can also override boolean operators like ==, !=, etc.
 
     + ```C++

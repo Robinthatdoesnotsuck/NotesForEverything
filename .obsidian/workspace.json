@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "UnityGameDevGeneral/ShadersWithUnity/BasicsInShaders.md",
+                "file": "C++_o3o/GeneralC++/C++Primer.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "UnityGameDevGeneral/ShadersWithUnity/BasicsInShaders.md",
+                "file": "C++_o3o/GeneralC++/C++Primer.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "UnityGameDevGeneral/ShadersWithUnity/BasicsInShaders.md",
+                "file": "C++_o3o/GeneralC++/C++Primer.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "UnityGameDevGeneral/ShadersWithUnity/BasicsInShaders.md"
+                "file": "C++_o3o/GeneralC++/C++Primer.md"
               }
             }
           }
@@ -148,14 +148,26 @@
   },
   "active": "c0c2591f23592f37",
   "lastOpenFiles": [
-    "Pasted image 20240625175655.png",
-    "Pasted image 20240625175539.png",
+    "C++_o3o/GraphicsForSeing/SDLForSmolPeople.md",
+    "C++_o3o/CPlusPlusIndex.md",
+    "README.md",
+    "GameDevelopmentKnowHow/Index.md",
+    "Python/Utilities/Poetry.md",
+    "Python/TDD_Python_Selenium/Selenium_UI_testing.md",
     "Python/TDD_Python_Selenium/Pytest.md",
-    "UnityGameDevGeneral/ExternalResources/Pasted image 20240623221014.png",
+    "Python/General_Python_Concepts/Medium_Specific_stuff.md",
+    "Python/General_Python_Concepts/Basic_Language_things.md",
+    "Python/Pyndex.md",
+    "GoLan/GoForGophers/GoBasics.md",
+    "GoLan/GoForGophers/WeGoIntermediate.md",
+    "GoLan/GoIndex.md",
+    "GoLan/GoForGophers/AdvancingWithGo.md",
+    "UnityGameDevGeneral/ExternalResources/Pasted image 20240625175539.png",
+    "UnityGameDevGeneral/ExternalResources/Pasted image 20240625175655.png",
     "UnityGameDevGeneral/ShadersWithUnity/BasicsInShaders.md",
+    "UnityGameDevGeneral/ExternalResources/Pasted image 20240623221014.png",
     "UnityGameDevGeneral/ExternalResources",
     "Pasted image 20240623221010.png",
-    "README.md",
     "UnityGameDevGeneral/ShadersWithUnity/ShaderIndex.md",
     "UnityGameDevGeneral/VRDev/SteamVRDevelopment.md",
     "UnityGameDevGeneral/VRDev/VRIndex.md",
@@ -167,15 +179,8 @@
     "Sempi_manifesto.md",
     "Infrastructure_and_System_Administration/AnsibleWorkRelated/AnsibleIndex.md",
     "Godot/GDIndex.md",
-    "GoLan/GoForGophers/GoBasics.md",
-    "Python/Utilities/Poetry.md",
-    "Python/Pyndex.md",
-    "GoLan/GoForGophers/AdvancingWithGo.md",
     "CloudComputing/AWS/BasicsOf.md",
-    "Ruby/Index.md",
     "Ruby",
-    "Untitled.canvas",
-    "GoLan/GoForGophers/CoreGoIndex.md",
-    "GoLan/GoForGophers/WeGoIntermediate.md"
+    "Untitled.canvas"
   ]
 }
