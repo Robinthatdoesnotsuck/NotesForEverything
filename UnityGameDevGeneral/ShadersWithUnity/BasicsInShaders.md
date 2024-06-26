@@ -47,3 +47,34 @@ fixed4 frag(v2f i) : SV_Target {
 ```
 
 ### ShaderLab Properties
+
+These are properties that can be manipulated in the inspector and there are 8 different properties for us to handle but first have to be declared in the context of our shader.
+- ``PropertyName ("display name", type) = defaultValue``
+- We have four parts, first the name of the property itself, then the name in the inspector, the type for the property type and the default value assigned.
+- For example when we created our unlit material this property appeared
+- ![[Pasted image 20240625175539.png]]
+- The **Texture** property was declared in the properties section of the shader code
+- ![[Pasted image 20240625175655.png]]
+- You can declare properties in different ways, like having a slider bar to assign it or a plain float number
+```hlsl
+Properties
+    {
+        // _MainTex ("Texture", 2D) = "white" {}
+        _Specular ("Specular", Range(0.0, 1.1)) = 0.3
+        _Factor ("Color Factor", Float) = 0.3
+        
+        // To change the RGBA at runtime
+        _Cid ("Color id", Int) = 2
+        _Color ("Tint", Color) = (1, 1, 1, 1)
+        _VPos ("Vertex Position", Vector) = (0, 0, 0, 1)
+
+        // Declaring textures in the shader
+        _MainTex ("Texture", 2D) = "white" {}
+        // Declaring a texture with cubemapping
+        _Reflection ("Reflection", Cube) = "black" {}
+        // 3D type texture
+        _3DTexture ("3D Texture", 3D) = "white" {}
+    }
+```
+- We declare the properties first in the shaderlab section so it has to be declared in ShaderLab, but when we use it in the **CGPROGRAM** section of our shader will be accessed in CG or in the case that we are using HLSL we will have to use that, but what we've done here is called connection variables.
+- So when we declared this stuff shaderlab gives the context to the whole program

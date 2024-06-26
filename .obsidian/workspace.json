@@ -13,8 +13,8 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Python/TDD_Python_Selenium/Pytest.md",
-                "mode": "preview",
+                "file": "UnityGameDevGeneral/ShadersWithUnity/BasicsInShaders.md",
+                "mode": "source",
                 "source": false
               }
             }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Python/TDD_Python_Selenium/Pytest.md",
+                "file": "UnityGameDevGeneral/ShadersWithUnity/BasicsInShaders.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Python/TDD_Python_Selenium/Pytest.md",
+                "file": "UnityGameDevGeneral/ShadersWithUnity/BasicsInShaders.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Python/TDD_Python_Selenium/Pytest.md"
+                "file": "UnityGameDevGeneral/ShadersWithUnity/BasicsInShaders.md"
               }
             }
           }
@@ -148,6 +148,9 @@
   },
   "active": "c0c2591f23592f37",
   "lastOpenFiles": [
+    "Pasted image 20240625175655.png",
+    "Pasted image 20240625175539.png",
+    "Python/TDD_Python_Selenium/Pytest.md",
     "UnityGameDevGeneral/ExternalResources/Pasted image 20240623221014.png",
     "UnityGameDevGeneral/ShadersWithUnity/BasicsInShaders.md",
     "UnityGameDevGeneral/ExternalResources",
@@ -165,7 +168,6 @@
     "Infrastructure_and_System_Administration/AnsibleWorkRelated/AnsibleIndex.md",
     "Godot/GDIndex.md",
     "GoLan/GoForGophers/GoBasics.md",
-    "Python/TDD_Python_Selenium/Pytest.md",
     "Python/Utilities/Poetry.md",
     "Python/Pyndex.md",
     "GoLan/GoForGophers/AdvancingWithGo.md",
