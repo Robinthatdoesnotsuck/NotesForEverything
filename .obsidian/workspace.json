@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "README.md",
+                "file": "UnityGameDevGeneral/ShadersWithUnity/BasicsInShadersWithUnity.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "README.md",
+                "file": "UnityGameDevGeneral/ShadersWithUnity/BasicsInShadersWithUnity.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "README.md",
+                "file": "UnityGameDevGeneral/ShadersWithUnity/BasicsInShadersWithUnity.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "README.md"
+                "file": "UnityGameDevGeneral/ShadersWithUnity/BasicsInShadersWithUnity.md"
               }
             }
           }
@@ -148,11 +148,15 @@
   },
   "active": "c0c2591f23592f37",
   "lastOpenFiles": [
+    "UnityGameDevGeneral/ShadersWithUnity/ShaderIndex.md",
+    "UnityGameDevGeneral/VRDev/SteamVRDevelopment.md",
+    "UnityGameDevGeneral/VRDev/VRIndex.md",
+    "UnityGameDevGeneral/Unitindex.md",
+    "README.md",
     "GoLan/GoForGophers/AdvancingWithGo.md",
     "C++_o3o/GeneralC++/C++Primer.md",
     "C++_o3o/GraphicsForSeing/SDLForSmolPeople.md",
     "C++_o3o/CPlusPlusIndex.md",
-    "README.md",
     "GameDevelopmentKnowHow/Index.md",
     "Python/Utilities/Poetry.md",
     "Python/TDD_Python_Selenium/Selenium_UI_testing.md",
@@ -165,14 +169,10 @@
     "GoLan/GoIndex.md",
     "UnityGameDevGeneral/ExternalResources/Pasted image 20240625175539.png",
     "UnityGameDevGeneral/ExternalResources/Pasted image 20240625175655.png",
-    "UnityGameDevGeneral/ShadersWithUnity/BasicsInShaders.md",
+    "UnityGameDevGeneral/ShadersWithUnity/BasicsInShadersWithUnity.md",
     "UnityGameDevGeneral/ExternalResources/Pasted image 20240623221014.png",
     "UnityGameDevGeneral/ExternalResources",
     "Pasted image 20240623221010.png",
-    "UnityGameDevGeneral/ShadersWithUnity/ShaderIndex.md",
-    "UnityGameDevGeneral/VRDev/SteamVRDevelopment.md",
-    "UnityGameDevGeneral/VRDev/VRIndex.md",
-    "UnityGameDevGeneral/Unitindex.md",
     "UnityGameDevGeneral/ShadersWithUnity",
     "Infrastructure_and_System_Administration/InfraSisAdminIndex.md",
     "Infrastructure_and_System_Administration/VagrantForMe/VagrantIndex.md",

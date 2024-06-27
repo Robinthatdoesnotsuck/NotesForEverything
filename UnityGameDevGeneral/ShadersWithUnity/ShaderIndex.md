@@ -1,2 +1,2 @@
-1. [Shaders basics for degenerates](./BasicsInShaders)
+1. [Shaders basics for degenerates](BasicsInShadersWithUnity.md)
 2. 

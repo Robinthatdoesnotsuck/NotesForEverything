@@ -1,4 +1,19 @@
 # WHAT IS A KILOMETER (Shaders)
+This lives in the pass section of the shader file
+- Vertex Shader
+	-  Set position of vertices on a mesh
+	-  Pass info to the fragment shader
+	- It is setup at clip space
+- Fragment Shader
+	- This modifies pixel color 
+Material
+- Part of the properties that we defined ourselves
+- The material has a reference to the shader
+- It is mostly a pre-configured shader data that the renderer uses well to render things on screen
+	- So we assign a shader to a material and tweak the parameters to get the effect we want
+- Colors
+- Valves
+- Textures
 ## Basic KnowHows on applying shaders in Unity
 - You cannot apply a shader directly to an object in scene
 	- First You have to create a material
