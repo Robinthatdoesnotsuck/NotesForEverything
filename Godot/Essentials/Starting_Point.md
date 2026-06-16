@@ -1,4 +1,5 @@
 # Starting points to learning GODOT Engine
+These notes are constructed by somebody that already knows a little bit of everything from 3D modeling, computer graphics and other game engines so some notes on some topics might be missing like, moving objects around the engine view, translation of objects or some other animation concepts
 
 ## The three phases to learning programming
 

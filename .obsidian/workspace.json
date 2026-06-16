@@ -4,21 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "fe8ff0f693cf6231",
+        "id": "3aacdc003c9b6752",
         "type": "tabs",
         "children": [
           {
-            "id": "97dac0eb1d10f609",
+            "id": "5e7df068dc60d550",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Python/TDD_Python_Selenium/BasicsOfPytest.md",
+                "file": "Godot/Essentials/Csharp with Godot to look cool.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "BasicsOfPytest"
+              "title": "Csharp with Godot to look cool"
             }
           }
         ]
@@ -40,7 +40,8 @@
             "state": {
               "type": "file-explorer",
               "state": {
-                "sortOrder": "alphabetical"
+                "sortOrder": "alphabetical",
+                "autoReveal": false
               },
               "icon": "lucide-folder-closed",
               "title": "Files"
@@ -154,6 +155,7 @@
   },
   "left-ribbon": {
     "hiddenItems": {
+      "bases:Create new base": false,
       "switcher:Open quick switcher": false,
       "graph:Open graph view": false,
       "canvas:Create new canvas": false,
@@ -162,41 +164,49 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "97dac0eb1d10f609",
+  "active": "5e7df068dc60d550",
   "lastOpenFiles": [
-    "Untitled.canvas",
+    "Godot/Essentials/Assets/ExportAttr.png",
+    "Godot/Essentials/GDScript.md",
+    "Godot/Essentials/Assets/AnimationPlayer.png",
+    "Godot/Essentials/Csharp with Godot to look cool.md",
+    "Godot/Essentials/Engine Basics and how to use Godot.md",
+    "Godot/Essentials/NodeSystem.md",
+    "Godot/Essentials/Starting_Point.md",
+    "Godot/GDIndex.md",
+    "UnityGameDevGeneral/VRDev/VRIndex.md",
+    "().md",
+    "UnityGameDevGeneral/VRDev/SteamVRDevelopment.md",
+    "UnityGameDevGeneral/Unitindex.md",
+    "TDD_Python_Selenium/Pytest.md",
+    "MastersTodo/Master now like to do.md",
+    "MastersTodo",
+    "C++_o3o/CompilingTools/RawGcc/Gcc the good ol GNU compiler.md",
+    "C++_o3o/CompilingTools/CMake/CMake and how to use bigboy c++.md",
+    "C++_o3o/CompilingTools/RawGcc",
+    "C++_o3o/CompilingTools/CMake",
+    "C++_o3o/GraphicsForSeing/SDLForSmolPeople.md",
+    "C++_o3o/CPlusPlusIndex.md",
+    "C++_o3o/Untitled.md",
+    "C++_o3o/CompilingTools",
     "2024-10-08.md",
+    "Untitled.canvas",
+    "Untitled.base",
+    "Godot/Essentials/Assets",
+    "Python/TDD_Python_Selenium/BasicsOfPytest.md",
     "Python/General_Python_Concepts/Medium_Specific_stuff.md",
     "Python/General_Python_Concepts/Basic_Language_things.md",
     "Python/Pyndex.md",
-    "Python/TDD_Python_Selenium/BasicsOfPytest.md",
     "Python/TDD_Python_Selenium/Selenium_UI_testing.md",
     "README.md",
-    "TDD_Python_Selenium/Pytest.md",
     "TDD_Python_Selenium",
     "Python/TDD_Python_Selenium/Pytest.md",
-    "UnityGameDevGeneral/ShadersWithUnity/BasicsInShadersWithUnity.md",
     "UnityGameDevGeneral/ExternalResources/Pasted image 20240625175655.png",
     "UnityGameDevGeneral/ExternalResources/Pasted image 20240625175539.png",
-    "C++_o3o/CPlusPlusIndex.md",
-    "GoLan/GoForGophers/GoBasics.md",
-    "GoLan/GoForGophers/WeGoIntermediate.md",
-    "GoLan/GoForGophers/AdvancingWithGo.md",
-    "GoLan/GoForGophers/CoreGoIndex.md",
-    "GoLan/GoIndex.md",
-    "Python/Utilities/Poetry.md",
     "UnityGameDevGeneral/ExternalResources/Pasted image 20240623221014.png",
-    "UnityGameDevGeneral/ShadersWithUnity/BasicsInShaders.md",
     "UnityGameDevGeneral/ExternalResources",
     "Pasted image 20240623221010.png",
-    "UnityGameDevGeneral/ShadersWithUnity/ShaderIndex.md",
-    "UnityGameDevGeneral/VRDev/SteamVRDevelopment.md",
-    "UnityGameDevGeneral/VRDev/VRIndex.md",
-    "UnityGameDevGeneral/Unitindex.md",
     "UnityGameDevGeneral/ShadersWithUnity",
-    "Infrastructure_and_System_Administration/InfraSisAdminIndex.md",
-    "Infrastructure_and_System_Administration/VagrantForMe/VagrantIndex.md",
-    "Software_Engineering/SWEIndex.md",
     "Ruby"
   ]
 }
