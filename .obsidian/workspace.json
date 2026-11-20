@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Godot/Essentials/Csharp with Godot to look cool.md",
+                "file": "Elixir/Basic Elixir.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Csharp with Godot to look cool"
+              "title": "Basic Elixir"
             }
           }
         ]
@@ -41,7 +41,9 @@
               "type": "file-explorer",
               "state": {
                 "sortOrder": "alphabetical",
-                "autoReveal": false
+                "autoReveal": false,
+                "showSearch": false,
+                "searchQuery": ""
               },
               "icon": "lucide-folder-closed",
               "title": "Files"
@@ -166,14 +168,21 @@
   },
   "active": "5e7df068dc60d550",
   "lastOpenFiles": [
-    "Godot/Essentials/Engine Basics and how to use Godot.md",
+    "Elixir/Elixindex.md",
+    "Elixir/Basic Elixir.md",
     "Godot/Essentials/Csharp with Godot to look cool.md",
-    "Godot/Essentials/Assets/ExportAttr.png",
+    "Elixir",
+    "Godot/Essentials/Engine Basics and how to use Godot.md",
     "Godot/Essentials/GDScript.md",
+    "Godot/GDIndex.md",
+    "GoLan/GoForGophers/WeGoIntermediate.md",
+    "GoLan/GoForGophers/GoBasics.md",
+    "GoLan/GoForGophers/CoreGoIndex.md",
+    "GoLan/GoForGophers/AdvancingWithGo.md",
+    "Godot/Essentials/Assets/ExportAttr.png",
     "Godot/Essentials/Assets/AnimationPlayer.png",
     "Godot/Essentials/NodeSystem.md",
     "Godot/Essentials/Starting_Point.md",
-    "Godot/GDIndex.md",
     "UnityGameDevGeneral/VRDev/VRIndex.md",
     "().md",
     "UnityGameDevGeneral/VRDev/SteamVRDevelopment.md",
@@ -195,18 +204,12 @@
     "Godot/Essentials/Assets",
     "Python/TDD_Python_Selenium/BasicsOfPytest.md",
     "Python/General_Python_Concepts/Medium_Specific_stuff.md",
-    "Python/General_Python_Concepts/Basic_Language_things.md",
-    "Python/Pyndex.md",
-    "Python/TDD_Python_Selenium/Selenium_UI_testing.md",
-    "README.md",
     "TDD_Python_Selenium",
-    "Python/TDD_Python_Selenium/Pytest.md",
     "UnityGameDevGeneral/ExternalResources/Pasted image 20240625175655.png",
     "UnityGameDevGeneral/ExternalResources/Pasted image 20240625175539.png",
     "UnityGameDevGeneral/ExternalResources/Pasted image 20240623221014.png",
     "UnityGameDevGeneral/ExternalResources",
     "Pasted image 20240623221010.png",
-    "UnityGameDevGeneral/ShadersWithUnity",
-    "Ruby"
+    "UnityGameDevGeneral/ShadersWithUnity"
   ]
 }
